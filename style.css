@@ -1,0 +1,289 @@
+/* ===== GLOBAL STYLES (Pangkalahatang Estilo) ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mas modernong font */
+    background-color: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 60px; /* Space for the fixed navbar */
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    color: #004d99; /* Isang shade ng asul para sa propesyonal na kulay */
+}
+
+/* Link Hover Effect */
+a {
+    color: #004d99;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+/* ===== NAVIGATION BAR (Navbar) ===== */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    height: 60px; /* Itakda ang taas ng navbar */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 20px; /* Inayos ang vertical padding, nilipat ang 20px sa .navbar */
+    line-height: 60px; /* I-align ang text sa gitna ng 60px height */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #004d99; /* Mas matingkad na kulay sa hover */
+    color: #fff;
+}
+
+/* ===== MAIN CONTENT (Pangunahing Nilalaman) ===== */
+.main-container {
+    padding: 20px;
+}
+
+.content-section {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px; /* Mas bilugan na gilid */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Mas malalim na anino */
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #004d99;
+    font-size: 2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Home Section */
+.home-content {
+    text-align: center;
+    padding: 40px 0;
+}
+.home-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+}
+.home-content p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Contact Section (Para mas maganda tingnan ang listahan ng contact) */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#contact ul li {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+#projects p {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+}
+
+/* ===== UTILITY CLASS ===== */
+.hidden {
+    display: none;
+}
+
+
+/* ===== RESUME STYLES (Inayos at Pinaganda) ===== */
+.resume-container {
+    padding: 0; 
+    box-shadow: none;
+    border: none;
+}
+
+/* Resume Header and Contact Info */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* In-align sa gitna ang mga item */
+    border-bottom: 3px solid #004d99; /* Mas matingkad na linya */
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.header-left h1 {
+    margin: 0 0 5px 0;
+    font-size: 2.2em;
+    color: #333;
+}
+
+.header-left p {
+    margin: 4px 0;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Icon Spacing - Para mas maganda tingnan ang icon sa teksto */
+.header-left p i {
+    margin-right: 8px;
+    color: #004d99;
+}
+
+/* Profile Picture */
+.header-right .profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #004d99;
+    border-radius: 50%; /* Gawing bilog ang picture */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Resume Sections */
+.section {
+    margin-bottom: 35px;
+}
+
+.section-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #004d99;
+    border-left: 5px solid #004d99;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+/* Education Entry */
+.entry {
+    display: flex;
+    border-left: 2px solid #ccc; /* Vertical line separator */
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+
+.entry-date {
+    flex: 0 0 130px;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.entry-details {
+    flex: 1;
+}
+
+.entry-details h3 {
+    margin: 0 0 3px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+.entry-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap; /* Para mag-wrap sa next line sa mobile */
+    gap: 10px; /* Space between skill items */
+}
+
+.skills-list li {
+    background-color: #e6f0ff; /* Light blue background for skills */
+    color: #004d99;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border: 1px solid #cce0ff;
+}
+
+/* ===== RESPONSIVE DESIGN (Para sa Mobile) ===== */
+@media (max-width: 768px) {
+    
+    /* Navbar Adjustment for smaller screens */
+    .nav-links {
+        flex-wrap: wrap;
+    }
+    .nav-links li a {
+        padding: 15px 10px;
+        line-height: 1;
+    }
+    .navbar {
+        height: auto;
+    }
+    body {
+        padding-top: 100px; /* Taasan ang padding sa body dahil nag-wrap ang navbar */
+    }
+
+    .content-section {
+        padding: 20px 15px;
+        margin: 10px;
+    }
+
+    /* Resume Mobile Layout */
+    .header {
+        flex-direction: column; /* I-stack ang header items */
+        text-align: center;
+        align-items: center;
+    }
+    .header-left {
+        order: 2; /* Ilagay sa ilalim ng picture */
+    }
+    .header-right {
+        order: 1; /* Ilagay sa taas ang picture */
+        margin-bottom: 20px;
+    }
+    .header-left h1 {
+        font-size: 1.8em;
+    }
+
+    .entry {
+        flex-direction: column; /* I-stack ang petsa at detalye */
+    }
+    .entry-date {
+        flex: auto;
+        margin-bottom: 5px;
+        font-size: 0.85em;
+    }
+    .entry-details {
+        padding-left: 0;
+    }
+}
